@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          src="./UserProfile.png"
+          alt="Avatar"
+          data-testid="test-user-avatar"
+          id="avatar"
+        />
+        <figcaption>Profile picture</figcaption>
+      </figure>
+
+      <div id="userInfo">
+        <h2 data-testid="test-user-name">Ezenwa Eberchukwu</h2>
+        <p data-testid="test-user-bio">
+          Passionate frontend developer who loves turning <br />
+          creative ideas into interactive, user-friendly web experiences.
+        </p>
+
+        <ul data-testid="test-user-hobbies" id="hobbies">
+          <h3>Hobbies</h3>
+          <li>Drawing</li>
+          <li>Watching movies</li>
+          <li>Watching vlogs</li>
+          <li>Scrolling through social media</li>
+        </ul>
+
+        <ul data-testid="test-user-dislikes" id="dislikes">
+          <h3>Dislikes</h3>
+          <li>Abacha</li>
+          <li>Dirty environment</li>
+          <li>The smell of grass</li>
+          <li>Hypocrisy</li>
+        </ul>
+
+        <p data-testid="test-user-time" id="time"></p>
+
+        <ul data-testid="test-user-social-links" id="socialMediaLinks">
+          <li data-testid="test-user-social-linkedIn">
+            <a
+              href="https://www.linkedin.com/in/eberechukwu-ezenwa-3b2749343/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+
+        <label>
+          Image URL:
+          <input
+            type="text"
+            id="avatar-url"
+            placeholder="Paste image URL here"
+          />
+        </label>
+
+        <label id="uploadButton">
+          Upload Image:
+          <input type="file" id="avatar-file" accept="image/*" />
+        </label>
+      </div>
+    </article>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
